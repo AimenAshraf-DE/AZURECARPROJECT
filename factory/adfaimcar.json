@@ -1,0 +1,9 @@
+{
+	"name": "adfaimcar",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ceb930ef-73fd-4c87-a2aa-5cb53671197e",
+		"tenantId": "b901e739-df73-4cb5-a9e1-c55110f0538e"
+	}
+}
