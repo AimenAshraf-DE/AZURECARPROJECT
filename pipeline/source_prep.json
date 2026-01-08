@@ -28,7 +28,8 @@
 					"sink": {
 						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": false
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -222,7 +223,12 @@
 						"referenceName": "Incremental_ingestion",
 						"type": "PipelineReference"
 					},
-					"waitOnCompletion": true
+					"waitOnCompletion": true,
+					"parameters": {
+						"schema": "dbo",
+						"table": "source_cars_data",
+						"cdc_col": "Date_ID"
+					}
 				}
 			}
 		],
