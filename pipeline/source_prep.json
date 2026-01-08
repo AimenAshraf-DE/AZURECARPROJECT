@@ -192,7 +192,7 @@
 						"referenceName": "ds_git",
 						"type": "DatasetReference",
 						"parameters": {
-							"load_flag": "IncrementalSales.csv"
+							"load_flag": "SalesData.csv"
 						}
 					}
 				],
@@ -223,12 +223,7 @@
 						"referenceName": "Incremental_ingestion",
 						"type": "PipelineReference"
 					},
-					"waitOnCompletion": true,
-					"parameters": {
-						"schema": "dbo",
-						"table": "source_cars_data",
-						"cdc_col": "Date_ID"
-					}
+					"waitOnCompletion": true
 				}
 			}
 		],

@@ -243,13 +243,16 @@
 		],
 		"parameters": {
 			"schema": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "dbo"
 			},
 			"table": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "source_cars_data"
 			},
 			"cdc_col": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Date_ID"
 			}
 		},
 		"variables": {
