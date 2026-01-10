@@ -206,6 +206,8 @@
 			{
 				"name": "Incremental_ingestion",
 				"type": "ExecutePipeline",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "CopyGitdata",
